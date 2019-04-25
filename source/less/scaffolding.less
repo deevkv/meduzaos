@@ -1,0 +1,54 @@
+/* Файл variables.less */
+/* Файл scaffolding.less */
+
+@font-face {
+  font-weight: normal;
+  font-family: "KoHo";
+  font-style: normal;
+  src: url("../fonts/koho-regular-webfont.woff2") format("woff2"), url("../fonts/koho-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "KoHo";
+  font-style: normal;
+  src: url("../fonts/koho-bold-webfont.woff2") format("woff2"), url("../fonts/koho-bold-webfont.woff") format("woff");
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "KoHo", "Arial", sans-serif;
+  color: #2F2B2E;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a, button, input {
+  outline-color: #FF7777;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}

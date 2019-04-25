@@ -1,0 +1,84 @@
+/* Файл blocks/community-info.less */
+
+.community-info {
+  margin: 0;
+  padding: 0 15px;
+  padding-top: 60px;
+
+}
+
+.communiity-info__title {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.community-info__description {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.community-info__description span {
+  text-decoration: underline;
+}
+
+
+.community-info__logo {
+  display: none;
+}
+
+.community-info__button {
+  margin: 0;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .community-info {
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .community-info__wrapper {
+    width: 505px;
+  }
+
+  .communiity-info__title {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  .community-info__logo {
+    display: block;
+    margin-top: -9px;
+    padding-right: 20px;
+    width: 156px;
+    height: 468px;
+  }
+
+  .community-info__button {
+    width: 253px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .community-info {
+   padding-left: 30px;
+  }
+
+  .community-info__wrapper {
+    width: 555px;
+  }
+
+  .community-info__logo {
+    padding-right: 53px;
+  }
+}

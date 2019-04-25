@@ -1,0 +1,50 @@
+/* Файл blocks/community.less */
+
+
+.community {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  padding: 15px;
+  text-align: center; 
+}
+
+.community__description {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+@media(min-width: 768px) {
+  .community {
+    display: flex;
+    padding: 0;
+  }
+
+  .community__description {
+    width: 470px;
+    text-align: left;
+    margin: 0;
+    padding-right: 15px;
+
+  }
+
+  .community__button {
+    width: 253px;
+    height: 100%;
+  }
+}
+
+@media(min-width: 1200px) {
+  .community {
+    padding: 0;
+    margin-left: 30px;
+  }
+
+  .community__description {
+  width: 555px;
+  }
+  .community__button {
+    width: 292px;
+  }
+}

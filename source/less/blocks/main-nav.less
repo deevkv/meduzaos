@@ -1,0 +1,140 @@
+/* Файл blocks/main-nav.less */
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+} 
+
+.main-nav {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 40px;
+
+
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__toggle {
+  display: block;
+  height: 40px;
+  background-color: #2F2B2E;
+  cursor: pointer;
+  border: none;
+  
+  border: 2px solid #282427;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  left: 150px;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: #ffffff; 
+  box-shadow: 0 5px 0 0 #ffffff, 0 10px 0 0 #ffffff;
+}
+
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 150px;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: #ffffff; 
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(45deg);
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+
+
+@media (max-width: 767px) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+  
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  
+  .main-nav--nojs .main-nav__wrapper {
+    display: block;
+  }
+
+   .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .user-list__item {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__wrapper {
+    flex-direction: row;
+    width: 643px;
+  } 
+
+  .main-nav {
+    width: auto;
+    margin: 0;
+    flex-direction: row;
+    min-height: 80px;
+    margin-left: 15px;
+  }
+
+   .main-nav__toggle {
+    /* order: 2; */
+    display: none;
+  }
+  
+  .main-nav__list {
+    width: 588px;
+  }
+ 
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    margin-left: 263px;
+  }
+
+  .main-nav__wrapper {
+    width: 877px;
+  }
+
+  .main-nav__toggle {
+    /* order: 2; */
+    display: none;
+  }
+
+  .main-nav__list{
+    width: 777px;
+    padding-left: 30px;
+  }
+
+}

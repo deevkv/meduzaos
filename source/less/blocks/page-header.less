@@ -1,0 +1,107 @@
+/* Файл blocks/page-header.less */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #2F2B2E;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+} 
+
+.page-header__logo {
+  width: 320px;
+  height: 80px;
+  padding-top: 26px;
+  background-color: #0182E8;
+  text-decoration: none;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.page-header__logo img {
+  display: none;
+}
+
+.page-header__logo span {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+
+@media (min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+  }
+
+  .page-header__wrapper {
+    width: 768px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+  } 
+
+  .page-header__logo {
+    width: 80px;
+    height: 80px;
+    padding-top: 13px; 
+    margin: 0;
+    
+  }
+
+  .page-header__logo img {
+  display: block;
+  }
+
+  .page-header__logo-image {
+    width: 54px;
+    height: 53px;
+    margin: 0 auto;
+  }
+
+   .page-header__logo span {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    flex-direction: row;
+  }
+
+  .page-header__wrapper {
+    width: 1140px;
+    padding: 0;
+  } 
+
+  .page-header__logo {
+    width: 263px;
+    height: 352px;
+    position: absolute;
+    padding-top: 26px;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+
+  .page-header__logo-image {
+    margin-top: 80px;
+    width: 151px;
+    height: 151px;
+  }
+
+  .page-header__logo span {
+    display: block;
+  }
+
+  .logo-docs {
+    height: 80px;
+  }
+ 
+}

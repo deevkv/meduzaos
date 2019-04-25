@@ -1,0 +1,57 @@
+/* Файл blocks/nav-docs.less */
+
+.nav-docs__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-top: 50px;
+  color: #ffffff;
+  list-style: none;
+}
+  
+.nav-docs__item {
+  margin: 10px 0;
+}
+
+.nav-docs__item a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #0182E8;
+}
+
+.nav-docs__item a:hover {
+  text-decoration: underline;
+}
+
+
+@media (min-width: 768px) { 
+  .nav-docs {
+    margin-top: 60px;
+    position: sticky;
+    top: 0;
+  }
+
+  .nav-docs__list {
+    margin: 0;
+    padding: 10px 0;
+    color: #ffffff;
+    list-style: none;
+  }
+
+  .nav-docs__item a {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #2f2b2e;
+
+  }
+}
+
+@media (min-width: 1200px) { 
+  .nav-docs {
+    margin-top: 140px;
+  }
+  .nav-docs__list {
+    padding: 15px 0;
+    padding-left: 25px;
+  }
+}

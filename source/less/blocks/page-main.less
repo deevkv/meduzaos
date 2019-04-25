@@ -1,0 +1,61 @@
+/* Файл blocks/page-main.less */
+
+.page-main {
+  flex: 1 0 auto;
+  padding-bottom: 35px;
+}
+
+.page-main__wrapper-right,
+.page-main__wrapper-left {
+  width: 320px;
+  margin: 0 auto;
+}
+.page-main__wrapper-left {
+  width: 320px;
+  padding: 0 15px;
+  box-sizing: border-box; 
+}
+
+
+@media (min-width: 768px) {
+  .page-main {
+    padding: 0px;
+  }
+
+  .page-main__wrapper-left {
+    width: 768px;
+    padding: 0 15px;
+    box-sizing: border-box; 
+  }
+
+  .page-main__wrapper-right {
+    width: 768px;
+    padding: 0 15px;
+    padding-bottom: 100px;
+    box-sizing: border-box; 
+  }
+ } 
+
+@media (min-width: 1200px) {
+  .page-main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+
+  }
+
+  .page-main__wrapper-right {
+    width: 877px; 
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+  }
+
+  .page-main__wrapper-left {
+    width: 260px;
+    margin: 0;
+    padding: 0;     
+  }
+
+}

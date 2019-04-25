@@ -1,0 +1,67 @@
+/* Файл blocks/site-list.less */
+
+.site-list a {
+  display: block;
+  padding: 10px 15px;
+
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  
+  border-bottom: 2px solid #282427;
+  border-left: 2px solid #282427;
+  border-right: 2px solid #282427;
+}
+
+.site-list a:hover {    /*  .site-list a[href]:hover http://htmlbook.ru/css/selector/attr4 */
+  background-color: #FF7777;
+  /* border-top-color: #FF7777; */
+  transition: 0.3s;
+}
+.site-list a:active {
+  /* color: rgba(255, 255, 255, 0.3); */
+  background-color: #FF9999;
+  /* border-top-color: #FF9999; */
+} 
+
+.site-list__item--active a {
+    background-color: #282427;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+   .site-list a{
+    padding: 30px 15px;
+    border: none;
+    margin-right: 15px;
+  }
+
+  .site-list__item--active a {
+    position: relative;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 255);
+  }
+
+  .site-list__item--active a::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    height: 6px;
+
+
+    background-color:  #FF7777;
+  }
+}

@@ -1,0 +1,28 @@
+/* Файл blocks/footer-nav.less */ 
+
+.footer-nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer-nav__list a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-nav__list a:hover {
+  color: #FF7777;
+}
+
+.footer-nav__item {
+  padding-left: 26px;
+}
+
+.footer-nav__item:not(:first-child) a:before {
+  content: "|";
+  color: #ffffff;
+  padding-right: 20px;
+
+}

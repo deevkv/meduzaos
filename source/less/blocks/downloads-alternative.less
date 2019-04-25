@@ -1,0 +1,98 @@
+/* Файл blocks/downloads-alternative.less */
+
+.downloads-alternative {
+  margin: 0;
+  padding: 0 15px;
+  text-align: center;
+}
+
+
+.downloads-alternative__title {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.downloads-alternative__description {
+  margin: 0;
+  padding: 0;
+}
+
+.downloads-alternative p:nth-child(2) {
+  margin-bottom: 15px;
+} 
+
+.downloads-alternative__icon {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto; 
+}
+
+.downloads-alternative__link {
+  margin: 0;
+  margin-top: 72px;
+  padding: 0;
+  padding-left: 30px;
+  width: 220px;
+  list-style: none;
+
+}
+
+.downloads-alternative__link a {
+  margin: 20px 0;
+  display: block;
+  color: #0182E8;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.downloads-alternative__link a:hover,
+.downloads-alternative__link a:active{
+  color: #FF7777;
+}
+
+
+@media (min-width: 768px) {
+  .downloads-alternative {
+    padding: 0;
+    padding-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  
+  }
+  .downloads-alternative__icon {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin-left: 76px; 
+    margin-top: 76px; 
+  }
+
+  .downloads-alternative__description {
+    width: 480px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .downloads-alternative {
+    padding-left: 30px;
+  }  
+
+  .downloads-alternative__icon {
+    margin-left: 100px; 
+  }
+  .downloads-alternative__description {
+    width: 555px;
+  }
+
+  .downloads__item {
+    width: 262px;
+  }
+} 

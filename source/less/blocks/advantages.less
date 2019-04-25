@@ -1,0 +1,58 @@
+/* Файл blocks/advantages.less */
+
+.advantages {
+  padding: 0 15px;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+
+  text-align: center;
+
+}
+
+.advantages__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.advantages__list {
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__description {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+
+@media(min-width: 768px) {
+  .advantages {
+    padding: 0;
+ }  
+}
+
+@media(min-width: 1200px) {
+  .advantages {
+    padding: 0;
+    margin: 0;
+  }
+
+  .advantages__list {
+    display: flex;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .advantages__item {
+    margin-left: 30px;
+    width: 292px;
+  }
+  .advantages__description {
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+}

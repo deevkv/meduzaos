@@ -1,0 +1,45 @@
+/* Файл blocks/user-list.less */
+
+.user-list a {
+  display: block;
+  padding: 10px 15px;
+
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  
+  border-bottom: 2px solid #282427;
+  border-left: 2px solid #282427;
+  border-right: 2px solid #282427;
+}
+
+.user-list a:hover {    /*  .site-list a[href]:hover http://htmlbook.ru/css/selector/attr4 */
+  background-color: #FF7777;
+  border-top-color: #FF7777;
+  transition: 0.3s;
+}
+.user-list a:active {
+  /* color: rgba(255, 255, 255, 0.3); */
+  background-color: #FF9999;
+  border-top-color: #FF9999;
+} 
+
+@media (min-width: 768px) {
+  .user-list {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .user-list a{
+    padding: 30px 15px;
+    border: none;
+  }
+}  
+
+@media (min-width: 1200px) {
+  .user-list {
+    width: 100px;
+  }
+}
