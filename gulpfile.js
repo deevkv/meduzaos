@@ -14,7 +14,7 @@ var include = require("posthtml-include");
 var server = require("browser-sync").create();
 
 gulp.task("clean", function() {
-	return del("build");
+	return del(["build/**, !build/.git"]);
 });
 
 gulp.task("copy", function() {
